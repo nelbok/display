@@ -30,6 +30,7 @@ set(QML_SOURCES
     qml/blocks/BSettings.qml
     qml/common/CBlock.qml
     qml/common/CComboBox.qml
+    qml/common/CSlider.qml
     qml/Main.qml
 )
 

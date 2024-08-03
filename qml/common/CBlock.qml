@@ -44,7 +44,7 @@ Rectangle {
         anchors.margins: 5
 
         text: parent.title
-        font.pointSize: MyStyles.style.pointSize
+        font.pointSize: MyStyles.font.pointSize
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         color: MyStyles.style.foreground

@@ -4,40 +4,46 @@
 <context>
     <name>BSettings</name>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="8"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="8"/>
+        <location filename="../qml/blocks/BSettings.qml" line="31"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="31"/>
         <source>Style:</source>
         <translation>Style :</translation>
     </message>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="10"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="10"/>
+        <location filename="../qml/blocks/BSettings.qml" line="33"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="33"/>
         <source>Light</source>
         <translation>Clair</translation>
     </message>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="11"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="11"/>
+        <location filename="../qml/blocks/BSettings.qml" line="34"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="34"/>
         <source>Dark</source>
         <translation>Sombre</translation>
     </message>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="18"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="18"/>
+        <location filename="../qml/blocks/BSettings.qml" line="41"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="41"/>
         <source>Language:</source>
         <translation>Langue :</translation>
     </message>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="20"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="20"/>
+        <location filename="../qml/blocks/BSettings.qml" line="43"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="43"/>
         <source>English</source>
         <translation>Anglais</translation>
     </message>
     <message>
-        <location filename="../qml/blocks/BSettings.qml" line="21"/>
-        <location filename="../build/Display/qml/blocks/BSettings.qml" line="21"/>
+        <location filename="../qml/blocks/BSettings.qml" line="44"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="44"/>
         <source>French</source>
         <translation>Français</translation>
+    </message>
+    <message>
+        <location filename="../qml/blocks/BSettings.qml" line="51"/>
+        <location filename="../build/Display/qml/blocks/BSettings.qml" line="51"/>
+        <source>Point size:</source>
+        <translation>Taille de police :</translation>
     </message>
 </context>
 <context>

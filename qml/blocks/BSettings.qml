@@ -46,5 +46,14 @@ Item {
             Component.onCompleted: currentIndex = MyTranslators.current
             onActivated: MyTranslators.current = currentIndex
         }
+
+        CSlider {
+            name: qsTr("Point size:")
+            from: 8
+            to: 16
+            stepSize: 0.5
+            Component.onCompleted: value = MyStyles.font.pointSize
+            onMoved: MyStyles.font.pointSize = value
+        }
     }
 }

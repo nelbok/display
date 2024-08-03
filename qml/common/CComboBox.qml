@@ -13,12 +13,12 @@ RowLayout {
     Text {
         id: name
 
-        Layout.preferredWidth: 80
+        Layout.preferredWidth: 120
 
         horizontalAlignment: Text.AlignRight
 
         color: MyStyles.style.foreground
-        font.pointSize: MyStyles.style.pointSize
+        font.pointSize: MyStyles.font.pointSize
     }
 
     ComboBox {
@@ -37,7 +37,7 @@ RowLayout {
         palette.window: MyStyles.style.background // Popup background color
         palette.dark: MyStyles.style.foreground // Foreground indicator
 
-        font.pointSize: MyStyles.style.pointSize
+        font.pointSize: MyStyles.font.pointSize
 
         onActivated: parent.activated()
     }

@@ -1,5 +1,21 @@
 #include "StylesManager.hpp"
 
+Font::Font(QObject* parent)
+    : QObject(parent) {}
+
+Font::~Font() {}
+
+double Font::pointSize() const {
+    return _pointSize;
+}
+
+void Font::setPointSize(double pointSize) {
+    if (_pointSize != pointSize) {
+        _pointSize = pointSize;
+        emit pointSizeUpdated();
+    }
+}
+
 StylesManager::StylesManager(QObject* parent)
     : QObject(parent) {}
 
@@ -29,6 +45,8 @@ void StylesManager::init() {
     }
 
     _current = 0;
+
+    _font = new Font(this);
 }
 
 qsizetype StylesManager::current() const {
@@ -48,4 +66,9 @@ const Style& StylesManager::style() const {
 
 const QList<Style>& StylesManager::styles() const {
     return _styles;
+}
+
+Font* StylesManager::font() const {
+    assert(_font);
+    return _font;
 }
