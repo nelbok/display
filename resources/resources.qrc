@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
-        <file alias="logo.svg">logo.svg</file>
+        <file>board.svg</file>
+        <file>circle.svg</file>
+        <file>diamond.svg</file>
+        <file>logo.svg</file>
+        <file>triangle.svg</file>
     </qresource>
 </RCC>

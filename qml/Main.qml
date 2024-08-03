@@ -46,6 +46,11 @@ Window {
             heightMax: root.blockHeight
 
             onTitleClicked: switchBlock(components)
+
+            BComponents {
+                visible: components.expanded
+                anchors.fill: components.content
+            }
         }
 
         CBlock {

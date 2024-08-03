@@ -18,20 +18,30 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Quick LinguistTools)
 
 set(PROJECT_SOURCES
-    src/main.cpp
     src/StylesManager.cpp
     src/StylesManager.hpp
     src/TranslationsManager.cpp
     src/TranslationsManager.hpp
 
+    src/main.cpp
+
     resources/resources.qrc
 )
 set(QML_SOURCES
+    qml/blocks/BComponents.qml
     qml/blocks/BSettings.qml
+
     qml/common/CBlock.qml
     qml/common/CComboBox.qml
+    qml/common/CRadioButton.qml
     qml/common/CSlider.qml
+    qml/common/CText.qml
+    qml/common/CTextComboBox.qml
+    qml/common/CTextSlider.qml
+
     qml/Main.qml
+
+    qml/tools.js
 )
 
 set(TRANSLATION_FILES
