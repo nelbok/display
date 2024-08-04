@@ -6,6 +6,7 @@ import Display
 import "../tools.js" as Tools
 
 Item {
+    id: root
 
     RowLayout {
         id: groupRadio
@@ -32,6 +33,7 @@ Item {
     }
 
     Rectangle{
+        id: rectTexture
         anchors.top: groupRadio.top
         anchors.topMargin: parent.width / 4
         anchors.horizontalCenter: parent.horizontalCenter
@@ -49,4 +51,36 @@ Item {
             source: Tools.Textures.Board
         }
     }
+
+    Repeater {
+        model: [0, 45, 90, 135, 180, 225, 270, 315]
+        delegate: Item {
+            anchors.top: rectTexture.bottom
+            anchors.topMargin: parent.width / 4
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            height: root.width / 3
+            width: root.width / 3
+
+            RotationAnimation on rotation {
+                loops: Animation.Infinite
+                from: 0 + modelData
+                to: 360 + modelData
+                duration: 5000
+            }
+
+            Rectangle {
+                x: root.width / 6 - 10
+
+                width: 20
+                height: 20
+                radius: 20
+
+                border.color: MyStyles.style.border
+                border.width: MyStyles.style.width
+                color: MyStyles.style.background
+            }
+        }
+    }
+
 }
