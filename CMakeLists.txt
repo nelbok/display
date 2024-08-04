@@ -15,7 +15,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick LinguistTools)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Quick3D LinguistTools)
 
 set(PROJECT_SOURCES
     src/StylesManager.cpp
@@ -28,6 +28,7 @@ set(PROJECT_SOURCES
     resources/resources.qrc
 )
 set(QML_SOURCES
+    qml/blocks/B3DView.qml
     qml/blocks/BComponents.qml
     qml/blocks/BSettings.qml
 

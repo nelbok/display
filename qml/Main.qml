@@ -65,6 +65,11 @@ Window {
             heightMax: root.blockHeight
 
             onTitleClicked: switchBlock(view3D)
+
+            B3DView {
+                visible: view3D.expanded
+                anchors.fill: view3D.content
+            }
         }
     }
 
