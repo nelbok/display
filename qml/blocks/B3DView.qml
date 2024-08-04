@@ -30,6 +30,10 @@ Item {
         CRadioButton {
             onToggled: texture.source = Tools.Textures.Triangle
         }
+
+        CColorBox {
+            id: colorBox
+        }
     }
 
     View3D {
@@ -87,6 +91,7 @@ Item {
             scale: Qt.vector3d(1, 1, 1)
             source: "#Cube"
             materials: PrincipledMaterial {
+                baseColor: colorBox.color
                 baseColorMap: Texture {
                     id: texture
                     source: Tools.Textures.Board

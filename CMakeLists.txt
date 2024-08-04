@@ -33,6 +33,7 @@ set(QML_SOURCES
     qml/blocks/BSettings.qml
 
     qml/common/CBlock.qml
+    qml/common/CColorBox.qml
     qml/common/CComboBox.qml
     qml/common/CRadioButton.qml
     qml/common/CSlider.qml
